@@ -26,5 +26,6 @@ NodeJS Polo Tecnologico 2016
 
 - [Install MongoDB](https://docs.mongodb.com/manual/installation/)
 - [Intro NoSQL](http://cortezcristian.com/curso-node-js/material/slides/episodio1.html#/5)
+- [Práctica 1](https://github.com/cortezcristian/express4crud/blob/master/README-es.md)
 
 Material
