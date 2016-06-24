@@ -13,4 +13,13 @@ NodeJS Polo Tecnologico 2016
 
 ## Clase 2
 
+- [NPM INtro](http://cortezcristian.com/curso-node-js/material/slides/episodio2.html#/5)
+- [DavidDM](https://david-dm.org/)
+- [Mocha]()
+- [NodeJS Assert](https://nodejs.org/api/assert.html)
+- [Coverage](https://coveralls.io/)
+- [Regular Expressions](https://www.cheatography.com/davechild/cheat-sheets/regular-expressions/)
+- [JSHint](http://jshint.com/docs/options/)
+- [MomentJS](http://momentjs.com/)
+
 Material
