@@ -28,4 +28,7 @@ NodeJS Polo Tecnologico 2016
 - [Intro NoSQL](http://cortezcristian.com/curso-node-js/material/slides/episodio1.html#/5)
 - [Práctica 1](https://github.com/cortezcristian/express4crud/blob/master/README-es.md)
 
+## Clase 5
+- [CI demo](https://github.com/cortezcristian/express-ci-sample-class)
+
 Material
