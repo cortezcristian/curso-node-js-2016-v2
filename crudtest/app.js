@@ -1,16 +1,23 @@
+process.on('uncaughtException', function(err){
+   console.log("Error: ", err);
+});
 
-
+var mongoose = require('mongoose');
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var session = require('express-session');
+var passport = exports.passport = require('passport');
 
 var routes = require('./routes/index');
 var users = require('./routes/user');
 
-var app = express();
+mongoose.connect('mongodb://localhost/crudtest');
+
+var app = exports.app = express();
 
 var env = process.env.NODE_ENV || 'development';
 app.locals.ENV = env;
@@ -29,9 +36,15 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(session({secret: 'supersecret', saveUninitialized: true, resave: true}));
+app.use(passport.initialize());
+app.use(passport.session());
+
+require('./auth/local-strategy.js');
 
 app.use('/', routes);
 app.use('/users', users);
+require('./routes/main.js');
 
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {
