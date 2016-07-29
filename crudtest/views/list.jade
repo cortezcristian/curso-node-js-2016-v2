@@ -1,0 +1,32 @@
+extends layout
+
+block content
+  h1 ABM demo
+  a(href="/logout") Salir
+  pre.hide !{JSON.stringify(docs)}
+  p Welcome to #{title}
+  .container
+      .row.col-md-6.col-md-offset-2.custyle
+        table.table.table-striped.custab
+          thead
+            a.btn.btn-primary.btn-xs.pull-right(href='#')
+              b +
+              |  Add new categories
+            tr
+              th ID
+              th Title
+              th Parent ID
+              th.text-center Action
+          - docs.forEach(function(p){
+          tr
+            td 1
+            td=p.name
+            td News Cate
+            td.text-center
+              a.btn.btn-info.btn-xs(href='#')
+                span.glyphicon.glyphicon-edit
+                |  Edit
+              a.btn.btn-danger.btn-xs(href='#')
+                span.glyphicon.glyphicon-remove
+                |  Del
+          - })
