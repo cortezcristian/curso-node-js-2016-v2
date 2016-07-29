@@ -62,4 +62,6 @@ npm install -g yo
 - [Episodio 4](http://cortezcristian.com/curso-node-js/material/slides/episodio4.html#/)
 - [Episodio 5](http://cortezcristian.com/curso-node-js/material/slides/episodio5.html#/)
 
-Material
+# Extras
+
+- [Express Restify Mongoose](https://florianholzapfel.github.io/express-restify-mongoose/)
